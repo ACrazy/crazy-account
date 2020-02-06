@@ -1,0 +1,30 @@
+<!--pages/editDetail/editDetail.wxml-->
+<view>
+  <view class='user-bg'>
+    <text class='user-title'>金额</text>
+    <text class='user-icon' style='color:#42c02e; font-size:20px;'>0.00</text>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>分类</text>
+    <text class='user-icon'>请分类</text>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>账户</text>
+    <text class='user-icon'>请选择账户</text>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>日期</text>
+    <text class='user-icon'>2019-06-01</text>
+  </view>
+  <view class='user-bg' style="background-color:#ececec;height:10px">
+    </view>
+    <view class='user-bg'>
+    <text class='user-title'>地点</text>
+    <text class='user-icon'>请输入地点</text>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>备注</text>
+    <text class='user-icon'>本笔账单简单说明</text>
+  </view>
+</view>
+<button>保存</button>

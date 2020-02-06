@@ -1,0 +1,33 @@
+/* pages/editDetail/editDetail.wxss */
+page {
+  background-color:#ececec;
+}
+.user-bg {
+  background-color: white;
+  position: relative;
+  border-bottom: .5px solid #ececec;
+  height: 50px;
+  line-height: 50px;
+}
+.user-title {
+  position: absolute;
+  font-size: 14px;
+  color: black;
+  left: 5%;
+}
+.user-icon {
+  position: absolute;
+  font-size: 14px;
+  color: black;
+  right: 5%;
+}
+button {
+  color: rgb(255, 255, 255);
+  background-color: #1593ff;
+  height: 40px; 
+  width: 85%;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* box-shadow: darkgrey 3px 3px 10px -1px; */
+}

@@ -1,0 +1,24 @@
+<!-- 顶层图片和文字 -->
+<view class='top-view'>
+  <text class='today'>今日支出</text>
+  <text class='today-output'>{{todayOutter}}</text>
+  <text class='this-month'>本月支出 {{currentOutter}}</text>
+  <text class='odd'>预算剩余 {{contain}}</text>
+</view>
+
+<!-- 中间按钮 -->
+<view class='mid-view'>
+  <button bindtap='jumpTorecord'>记一笔</button>
+</view>
+
+<!-- 底层显示数据 -->
+<view wx:for="{{accountList}}" wx:for-item="item" wx:key="index">
+  <view class='bot-view' bindtap='jumpTodetails' id='{{item.id}}'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>{{item.title}}</text>
+      <text class='list-detail'>{{item.month}}-{{item.date}} {{item.time}} · {{item.account}}</text>
+    </view>
+    <text class='list-odd'>{{item.count}}</text>
+  </view>
+</view>

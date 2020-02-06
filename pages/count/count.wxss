@@ -1,0 +1,152 @@
+/* pages/count/count.wxss */
+.date-ui {
+  border-bottom: 1px #ececec solid;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #908f8f;
+  font-size: 16px;
+}
+.start-date {
+  position: absolute;
+  left: 50%;
+  margin-left: -105px;
+}
+.end-date {
+  position: absolute;
+  left: 50%;
+  margin-left: 15px;
+  margin-top: -50px;
+}
+.check-date {
+  padding: 5px 5px 5px 5px;
+  box-shadow: darkgrey 0px 1px 20px -1px;
+  border-radius: 5px;
+}
+.count-menu {
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  /* border-bottom: 1px #ececec solid; */
+}
+.count-menu-left {
+  border-right: 1px #ececec solid;
+  text-align: center;
+  line-height: 50px;
+  flex-grow: 1;
+}
+.count-menu-right {
+  text-align: center;
+  line-height: 50px;
+  flex-grow: 1;
+}
+.count-main {
+  position: relative;
+}
+#dbmx {
+  /* visibility: visible; */
+  position: absolute;
+  height: auto;
+  width: 100%;
+  /* border-bottom: 1px #ececec solid; */
+}
+#flmx {
+  /* visibility: hidden; */
+  position: absolute;
+  height: auto;
+  width: 100%;
+  /* border-bottom: 1px #ececec solid; */
+}
+.bot-view {
+  position: relative;
+  height: 54px;
+  width: 90%;
+  left: 5%;
+  border-bottom: .5px solid #ececec;
+}
+.list-icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 0px;
+  margin-top: 7px;
+}
+.list-tittle {
+  position: absolute;
+  top: 8px;
+  left: 48px;
+  font-size: 14px;
+}
+.list-detail {
+  color: #908f8f;
+  position: absolute;
+  font-size: 11px;
+  top: 30px;
+  left: 48px;
+}
+.list-odd {
+  color: #42c02e;
+  position: absolute;
+  font-size: 16px;
+  top: 18px;
+  right: 0px;
+}
+.input-output {
+  border-bottom: .5px dashed #ececec;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  position: relative;
+}
+.input-num {
+  color: #ff4829;
+  position: absolute;
+  left: 3%;
+}
+.output-num {
+  color: #42c02e;
+  position: absolute;
+  right: 3%;
+}
+.flex-box {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+.flex-item-2 {
+  position: relative;
+}
+.flex-item-2 text {
+  position: absolute;
+  font-size: 15px;
+  left: 2%;
+  margin: 15px;
+}
+.flex-item-6 {
+  position: relative;
+}
+.flex-item-1 {
+  position: relative;
+}
+.thr-coin-min-down {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  transform: rotate(-45deg);
+  border-bottom: 1px solid #999999;
+  border-left: 1px solid #999999;
+  right: 5%;
+  margin-top: 15px; 
+}
+.thr-coin-min-top {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  transform: rotate(135deg);
+  border-bottom: 1px solid #999999;
+  border-left: 1px solid #999999;
+  right: 5%;
+  margin-top: 20px; 
+}

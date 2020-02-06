@@ -1,0 +1,33 @@
+<!--pages/me/me.wxml-->
+<view class='top-view'>
+  <view class='user-mesg'>
+    
+  </view>
+</view>
+<view class='user-main'>
+  <view class='user-bg'>
+    <text class='user-title'>超级账单</text>
+    <view class='user-icon'><view class='arrow'></view></view>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>消费报表</text>
+    <view class='user-icon'><view class='arrow'></view></view>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>消息通知</text>
+    <view class='user-icon'><view class='arrow'></view></view>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>首页设置</text>
+    <view class='user-icon'><view class='arrow'></view></view>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>反馈建议</text>
+    <view class='user-icon'><view class='arrow'></view></view>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>关于随性记账</text>
+    <view class='user-icon'><view class='arrow'></view></view>
+  </view>
+</view>
+<view class='user-footer'>—————— 随性记账 ——————</view>

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/property/property",
+    "pages/count/count",
+    "pages/me/me",
+    "pages/record/record",
+    "pages/details/details",
+    "pages/editDetail/editDetail",
+    "pages/editProperty/editProperty"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1593ff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1593ff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/icon.jpg",
+        "selectedIconPath": "imgs/icon.jpg"
+      },
+      {
+        "pagePath": "pages/count/count",
+        "text": "统计",
+        "iconPath": "imgs/icon.jpg",
+        "selectedIconPath": "imgs/icon.jpg"
+      },
+      {
+        "pagePath": "pages/property/property",
+        "text": "资产",
+        "iconPath": "imgs/icon.jpg",
+        "selectedIconPath": "imgs/icon.jpg"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "imgs/icon.jpg",
+        "selectedIconPath": "imgs/icon.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

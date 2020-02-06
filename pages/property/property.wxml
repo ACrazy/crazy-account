@@ -1,0 +1,102 @@
+<!--pages/property/property.wxml-->
+<view class='bg-view'>
+  <view class='zczl-left-num'>
+    <text class='jzc-num'>{{netAssets}}</text>
+  </view>
+  <view class='zczl-right-num'>
+    <text class='zzc-num'>{{totalAssets}}</text>
+  </view>
+  <view class='zczl-left-font'>
+    <text class='jzc'>净资产</text>
+  </view>
+  <view class='zczl-right-font'>
+    <text class='zzc'>总资产</text>
+  </view>
+</view>
+
+<!-- 现金账户 -->
+<view class='xjyh'>
+  <text class='property-tittle'>现金账户</text>
+  <text class='property-num'>{{assetsList.xjAccount}}</text>
+  <view class='bot-view' bindtap='jumpToeditProperty'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>现金</text>
+    </view>
+    <text class='list-odd'>{{assetsList.cash}}</text>
+  </view>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>银行卡</text>
+    </view>
+    <text class='list-odd'>{{assetsList.bankCard}}</text>
+  </view>
+</view>
+<view class='view-line'></view>
+<!-- 虚拟账户 -->
+<view class='xjyh'>
+  <text class='property-tittle'>虚拟账户</text>
+  <text class='property-num'>{{assetsList.xnAccount}}</text>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>支付宝</text>
+    </view>
+    <text class='list-odd'>{{assetsList.zhi}}</text>
+  </view>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>微信</text>
+    </view>
+    <text class='list-odd'>{{assetsList.wechat}}</text>
+  </view>
+</view>
+<view class='view-line'></view>
+<!-- 负债账户 -->
+<view class='xjyh'>
+  <text class='property-tittle'>负债账户</text>
+  <text class='property-num'>{{assetsList.fzAccount}}</text>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>蚂蚁花呗</text>
+    </view>
+    <text class='list-odd'>{{assetsList.aunt}}</text>
+  </view>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>京东白条</text>
+    </view>
+    <text class='list-odd'>{{assetsList.jingDong}}</text>
+  </view>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>信用卡</text>
+    </view>
+    <text class='list-odd'>{{assetsList.creditCard}}</text>
+  </view>
+</view>
+<view class='view-line'></view>
+<!-- 投资账户 -->
+<view class='xjyh'>
+  <text class='property-tittle'>投资账户</text>
+  <text class='property-num'>{{assetsList.tzAccount}}</text>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>基金账户</text>
+    </view>
+    <text class='list-odd'>{{assetsList.fund}}</text>
+  </view>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>股票账户</text>
+    </view>
+    <text class='list-odd'>{{assetsList.shares}}</text>
+  </view>
+</view>

@@ -1,0 +1,102 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx3ee3272ccf2700dc",
+	"projectname": "%E7%96%AF%E7%8B%82%E4%BC%9A%E8%AE%A1%E7%8B%AE",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": 0,
+					"name": "preoperty",
+					"pathName": "pages/property/property",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "count",
+					"pathName": "pages/count/count",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "record",
+					"pathName": "pages/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "me",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "details",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "editDetail",
+					"pathName": "pages/editDetail/editDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "editProperty",
+					"pathName": "pages/editProperty/editProperty",
+					"scene": null
+				}
+			]
+		}
+	}
+}

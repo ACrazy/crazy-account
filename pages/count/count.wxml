@@ -1,0 +1,179 @@
+<!--pages/count/count.wxml-->
+<view class='date-ui'>
+  <picker mode="date" value="{{dateStart}}" start="2000-01-01" end="2019-06-14" bindchange="startDateChange">
+    <view class="picker start-date">
+      {{dateStart}}
+    </view>
+  </picker>
+  <text> ~ </text>
+  <picker mode="date" value="{{dateEnd}}" start="2000-01-01" end="2019-06-14" bindchange="endDateChange">
+    <view class="picker end-date">
+      {{dateEnd}}
+    </view>
+  </picker>
+</view>
+
+<view class='count-menu'>
+  <view class='count-menu-left' bindtap='countLeft' style='color:{{fontLeftColor}};border-bottom:{{weightLeft}} {{borderLeftColor}} solid'>单笔明细</view>
+  <view class='count-menu-right' bindtap='countRight' style='color:{{fontRightColor}};border-bottom:{{weightRight}} {{borderRightColor}} solid'>分类明细</view>
+</view>
+
+<view class='count-main'>
+  <!-- 左边菜单栏 -->
+  <view id='dbmx' hidden='{{isShow}}'>
+    <view>
+      <view class='bot-view' bindtap='jumpTodetails'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+    </view>
+  </view>
+  <!-- 右边菜单栏 -->
+  <view id='flmx' hidden='{{!isShow}}'>
+    <view>
+      <view class='input-output'>
+        <text class='input-num'>收入： 0.00</text>
+        <text class='output-num'>支出： 590.00</text>
+      </view>
+      <view>
+        <view class='flex-box' bindtap='isShowDetail' id='menu0'>
+          <view class='flex-item-2'>
+            <text>伙食餐饮</text>
+          </view>
+          <view class='flex-item-1'>
+            <view class='thr-coin-min-down' hidden='{{!isShowMenu[0]}}'>
+            </view>
+            <view class='thr-coin-min-top' hidden='{{isShowMenu[0]}}'>
+            </view>
+          </view>
+        </view>
+        <view class='flex-box-detail' hidden='{{isShowMenu[0]}}'>
+          <view class='bot-view' bindtap='jumpTodetails'>
+            <image class="list-icon" src="../../imgs/icon.jpg"></image>
+            <view>
+              <text class='list-tittle'>水果</text>
+              <text class='list-detail'>05-29 15:04 · 支付宝</text>
+            </view>
+            <text class='list-odd'>447.00</text>
+          </view>
+          <view class='bot-view'>
+            <image class="list-icon" src="../../imgs/icon.jpg"></image>
+            <view>
+              <text class='list-tittle'>水果</text>
+              <text class='list-detail'>05-29 15:04 · 支付宝</text>
+            </view>
+            <text class='list-odd'>447.00</text>
+          </view>
+          <view class='bot-view'>
+            <image class="list-icon" src="../../imgs/icon.jpg"></image>
+            <view>
+              <text class='list-tittle'>水果</text>
+              <text class='list-detail'>05-29 15:04 · 支付宝</text>
+            </view>
+            <text class='list-odd'>447.00</text>
+          </view>
+        </view>
+      </view>
+
+      <view>
+        <view class='flex-box' bindtap='isShowDetail' id='menu1'>
+          <view class='flex-item-2'>
+            <text>伙食餐饮</text>
+          </view>
+          <view class='flex-item-1'>
+            <view class='thr-coin-min-down' hidden='{{!isShowMenu[1]}}'>
+            </view>
+            <view class='thr-coin-min-top' hidden='{{isShowMenu[1]}}'>
+            </view>
+          </view>
+        </view>
+        <view class='flex-box-detail' hidden='{{isShowMenu[1]}}'>
+          <view class='bot-view' bindtap='jumpTodetails'>
+            <image class="list-icon" src="../../imgs/icon.jpg"></image>
+            <view>
+              <text class='list-tittle'>水果</text>
+              <text class='list-detail'>05-29 15:04 · 支付宝</text>
+            </view>
+            <text class='list-odd'>447.00</text>
+          </view>
+          <view class='bot-view'>
+            <image class="list-icon" src="../../imgs/icon.jpg"></image>
+            <view>
+              <text class='list-tittle'>水果</text>
+              <text class='list-detail'>05-29 15:04 · 支付宝</text>
+            </view>
+            <text class='list-odd'>447.00</text>
+          </view>
+          <view class='bot-view'>
+            <image class="list-icon" src="../../imgs/icon.jpg"></image>
+            <view>
+              <text class='list-tittle'>水果</text>
+              <text class='list-detail'>05-29 15:04 · 支付宝</text>
+            </view>
+            <text class='list-odd'>447.00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

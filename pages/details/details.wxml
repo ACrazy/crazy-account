@@ -1,0 +1,35 @@
+<!--pages/details/details.wxml-->
+<view style='background-color: white;'>
+  <view class='bot-view'>
+    <image class="list-icon" src="../../imgs/icon.jpg"></image>
+    <view>
+      <text class='list-tittle'>{{title}}</text>
+    </view>
+    <text class='list-odd'>{{count}}</text>
+  </view>
+  <view class='user-bg' style='padding-top: 10px;margin-top:0;'>
+    <text class='user-title'>分类</text>
+    <text class='user-icon'>{{type}}</text>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>账户</text>
+    <text class='user-icon'>{{account}}</text>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>时间</text>
+    <text class='user-icon'>{{date}} {{time}}</text>
+  </view>
+  <view class='user-bg'>
+    <text class='user-title'>地点</text>
+    <text class='user-icon'>{{position}}</text>
+  </view>
+  <view class='user-bg' style='padding-bottom: 10px;'>
+    <text class='user-title'>描述</text>
+    <text class='user-icon'>{{details}}</text>
+  </view>
+</view>
+
+<view class='view-bottom'>
+  <view class='view-bottom-left' bindtap='alertMessage'>删除</view>
+  <view class='view-bottom-right' bindtap='jumpToeditDetail'>编辑</view>
+</view>

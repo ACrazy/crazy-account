@@ -1,0 +1,113 @@
+/* pages/property/property.wxss */
+.bg-view {
+   width: 100%;
+   height: 100px;
+   background: linear-gradient(#1593ff, #a4e9ff);
+   position: relative;
+   box-shadow: darkgrey 0px 1px 20px -1px;
+}
+.bot-view {
+  position: relative;
+  height: 54px;
+  width: 90%;
+  left: 5%;
+  border-bottom: .5px solid #ececec;
+}
+.list-icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 0px;
+  margin-top: 7px;
+}
+.list-tittle {
+  position: absolute;
+  top: 15px;
+  left: 48px;
+  font-size: 16px;
+}
+.list-detail {
+  color: #908f8f;
+  position: absolute;
+  font-size: 11px;
+  top: 30px;
+  left: 48px;
+}
+.list-odd {
+  color: #908f8f;
+  position: absolute;
+  font-size: 16px;
+  top: 18px;
+  right: 0px;
+}
+.xjyh {
+  position: relative;
+  padding-top: 33px;
+}
+.property-tittle {
+  position: absolute;
+  font-size: 11px;
+  top: 10px;
+  left: 5%;
+}
+.property-num {
+  position: absolute;
+  font-size: 11px;
+  top: 10px;
+  right: 5%;
+}
+.view-line {
+  width: 100%;
+  height: 10px;
+  background-color: #ececec;
+  margin-top: -1px;
+}
+.zczl-left-num {
+  position: absolute;
+  left: 0;
+  height: 50px;
+  width: 50%;
+  line-height: 80px;
+  text-align: center;
+}
+.zczl-right-num {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 50%;
+  line-height: 80px;
+  text-align: center;
+}
+.zczl-left-font {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  height: 50px;
+  width: 50%;
+  line-height: 20px;
+  text-align: center;
+}
+.zczl-right-font {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  height: 50px;
+  width: 50%;
+  line-height: 20px;
+  text-align: center;
+}
+.jzc-num {
+  color: white;
+  font-size: 20px;
+}
+.jzc {
+  color: white;
+  font-size: 12px;
+}
+.zzc-num {
+  color: white;
+  font-size: 20px;
+}
+.zzc {
+  color: white;
+  font-size: 12px;
+}

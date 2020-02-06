@@ -1,0 +1,101 @@
+<!--pages/editProperty/editProperty.wxml-->
+<view class='bg-view'>
+  <view class='zczl-left-num'>
+    <text class='property-num'>5348.00</text>
+    <text class='property-num-name'>余额</text>
+  </view>
+  <view class='zczl-right-num'>
+    <view class='property-to' bindtap='jumpRecord'>转账</view>
+  </view>
+  <view class='thr-coin'></view>
+</view>
+<!-- 内容部分 -->
+<view>
+  <view class='input-output'><text class='input-num'>收入： 0.00</text><text class='output-num'>支出： 590.00</text></view>
+  <view>
+    <view class='flex-box' bindtap='isShowDetail' id='menu0'>
+      <view class='flex-item-2'>
+        <text class='month-ui'>05月</text>
+        <text class='year-ui'>2019年</text>
+      </view>
+      <view class='flex-item-6'>
+        <text class='input-num-min'>收入： 0.00</text>
+        <text class='output-num-min'>支出： 590.00</text>
+      </view>
+      <view class='flex-item-1'>
+        <view class='thr-coin-min-down' hidden='{{!isShowMenu[0]}}'></view>
+        <view class='thr-coin-min-top' hidden='{{isShowMenu[0]}}'></view>
+      </view>
+    </view>
+    <view class='flex-box-detail' hidden='{{isShowMenu[0]}}'>
+      <view class='bot-view' bindtap='jumpTodetails'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <view class='flex-box' bindtap='isShowDetail' id='menu1'>
+      <view class='flex-item-2'>
+        <text class='month-ui'>05月</text>
+        <text class='year-ui'>2019年</text>
+      </view>
+      <view class='flex-item-6'>
+        <text class='input-num-min'>收入： 0.00</text>
+        <text class='output-num-min'>支出： 590.00</text>
+      </view>
+      <view class='flex-item-1'>
+        <view class='thr-coin-min-down' hidden='{{!isShowMenu[1]}}'></view>
+        <view class='thr-coin-min-top' hidden='{{isShowMenu[1]}}'></view>
+      </view>
+    </view>
+
+    <view class='flex-box-detail' hidden='{{isShowMenu[1]}}'>
+      <view class='bot-view' bindtap='jumpTodetails'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+      <view class='bot-view'>
+        <image class="list-icon" src="../../imgs/icon.jpg"></image>
+        <view>
+          <text class='list-tittle'>水果</text>
+          <text class='list-detail'>05-29 15:04 · 支付宝</text>
+        </view>
+        <text class='list-odd'>447.00</text>
+      </view>
+    </view>
+  </view>
+</view>
